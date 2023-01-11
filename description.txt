@@ -1,0 +1,26 @@
+Elevator:
+    - If empty proceed to
+        a) nearest call
+        b) nearest call to the edges (floor 0 or floor n)
+
+    - If has passangers, go to destinations
+        - May optionally pick passangers up if call is in the same direction
+    
+    - At a destination stop, elevator must take passangersat a call going in the same direction
+    - Elevator does not know the exact destination until it accepts the passanger
+
+Group:
+    - At a floor and wants to get to a seperate destination floor
+
+    Generate groups:
+        - For each floor there is a probability a new group is generated
+
+Metrics:
+    - Average total wait time
+    - Standard deviation of total wait times
+    - Range of total wait times
+
+    - Average wait time in elevator
+    - Standard deviation of wait times in elevator
+    - Range of wait times in elevator
+
